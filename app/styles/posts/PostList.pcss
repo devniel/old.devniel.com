@@ -1,0 +1,40 @@
+.PostList {
+    
+    border-radius: 5px;
+    width: 100%;
+    margin: 0 auto;
+
+    .PostList-Message {
+        width: 100%;
+        background: transparent;
+        color: #FFF;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-family: Montserrat;
+
+        i {
+            fill: #FFF;
+        }
+    }
+
+    .PostList-Header {
+        display: flex;
+        align-items: center;
+
+        width: 100%;
+        margin: 20px auto;
+
+        .PostList-Header-Option {
+
+            & + .PostList-Header-Option {
+                margin-left: 10px;
+            }
+        }
+    }
+
+}

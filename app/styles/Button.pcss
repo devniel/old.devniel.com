@@ -1,0 +1,160 @@
+.Button {
+    display: block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: transparent;
+    border: 1px solid #AAA;
+    font-size: 15px;
+    font-weight: 500;
+    color: #AAA;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    background: #f6f7f9;
+    color: #4e5665;
+    border-color: rgba(0,0,0,.14);
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.14);
+    cursor: pointer;
+    font-family: Freight Sans, 'helvetica neue',helvetica,arial,'lucida grande',sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+    transition: all 100ms ease-out;
+
+    i {
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+        margin-right: 3px;
+        float: left;
+
+        svg {
+            fill: #AAA;
+        }
+    }
+
+    &:hover {
+        opacity: 1;
+        cursor: pointer;
+        color: #333;
+
+        i svg {
+            fill: #333;
+        }
+    }
+
+    & + .Button {
+        margin-left: 10px;
+    }
+}
+
+.Button.Red{
+    background: #f44336;
+    color: #FFF;
+    border-color: #f44336;
+    font-weight: bold;
+    border-radius: 3px;
+
+    &:hover {
+        background: #d62619;
+        border-color: #d62619;
+    }
+}
+
+.Button.White{
+    background: #FFF;
+    color: #333;
+    border-color: #FFF;
+    font-weight: bold;
+    border-radius: 5px;
+
+    background: #f6f7f9;
+    color: #4e5665;
+    
+
+    border-color: rgba(0,0,0,.14);
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.14);
+    cursor: pointer;
+    font-family: Freight Sans, 'helvetica neue',helvetica,arial,'lucida grande',sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+    transition: all 100ms ease-out;
+
+    &:hover {
+        cursor:pointerl
+    }
+}
+
+.Button.Braph-Button {
+    color: #FFF;
+    font-weight: bold;
+    border-radius: 100px;
+    background: #353F5A;
+    cursor: pointer;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 21px;
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+    transition: all 100ms ease-out;
+    box-shadow: none;
+    border: 0px;
+
+    background-image : url('/img/braph.svg');
+    background-position : left;
+    background-repeat : no-repeat;
+    background-size : 32px 32px;
+    background-position-x : 5px;
+
+    padding-left: 50px;
+
+    &:hover {
+        cursor:pointer;
+        background-color: #1F2841;
+    }
+}
+
+.Button.Braph-Button-Transparent {
+    color: #FFF;
+    font-weight: bold;
+    border-radius: 100px;
+    background: transparent;
+    cursor: pointer;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 21px;
+    padding: 5px 10px;
+    text-align: center;
+    transition: all 100ms ease-out;
+    box-shadow: none;
+    border: 0px;
+
+    i svg {
+        fill: #FFF;
+    }
+
+    &:hover {
+        cursor:pointer;
+        background-color: #FFF;
+        color: #556080;
+
+        i svg {
+            fill: #556080;
+        }
+    }
+}
+

@@ -1,0 +1,112 @@
+/**  BAR **/
+
+.Bar {
+    width: 100%;
+    background: transparent;
+}
+
+.Bar
+.inner {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    height: 100px;
+
+    @media screen and (max-width : 1200px){
+        width: 70%;
+    }
+    
+}
+
+
+/** NAV **/
+.Bar
+.bar-nav-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+
+    .nav {
+        display: flex;
+        align-items: center;
+
+        &.left {
+            flex: 1;
+        }
+
+        &.right {
+            width: auto;
+        }
+    }
+    
+}
+
+.Bar .bar-nav-wrapper .nav.left ul,
+.Bar .bar-nav-wrapper .nav.right ul {
+    list-style: none;
+    display: flex;
+}
+
+.Bar .bar-nav-wrapper .nav.left ul li,
+.Bar .bar-nav-wrapper .nav.right-public ul li {
+    border-radius: 3px;
+    transition: background 0.2s ease;
+    display: flex;
+    align-items: center;
+
+    & + li {
+        margin-left: 15px;
+    }
+
+    img {
+        width: 32px;
+        height: 32px;
+        margin-right: 5px;
+    }
+
+}
+
+.Bar .bar-nav-wrapper .nav.left ul li a,
+.Bar .bar-nav-wrapper .nav.right-public ul li a {
+    color: #FFF;
+    text-decoration: none;
+    font-family: Montserrat;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+}
+
+.Bar .bar-nav-wrapper .nav ul li:hover a {
+    color: #FAFAFA;
+}
+
+
+/** BAR - SETTINGS **/
+
+.Bar-Settings {
+    display: flex;
+    flex-direction: row;
+
+    .Bar-Settings-Braph-ID {
+        flex: 1;
+    }
+
+    .Bar-Settings-User {
+        width: auto;
+
+        a {
+            text-decoration: none;
+            color: #333;
+            display: flex;
+            align-items: center;
+
+            img {
+                width: 32px;
+                height: 32px;
+                margin-right: 5px;
+            }
+        }
+    }
+}
