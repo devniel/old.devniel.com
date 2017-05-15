@@ -1,11 +1,10 @@
+require('dotenv').config();
+
 var webpack = require('webpack');
 var path = require('path');
 var hotMiddlewareScript = 'webpack-hot-middleware/client';
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
-
-require('dotenv').config()
-
 
 module.exports = {
     entry: {

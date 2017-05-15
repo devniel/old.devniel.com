@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 var webpack = require('webpack');
 var path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -56,7 +58,10 @@ module.exports = {
         new webpack.DefinePlugin({
             'process.env': {
                 'NODE_ENV': JSON.stringify(process.env.NODE_ENV) ||  JSON.stringify('production'),
-                'URL' : JSON.stringify("http://alpha.braph.com")
+                'URL' : JSON.stringify(process.env.URL) || JSON.stringify("http://alpha.braph.com"),
+                'API_URL' : JSON.stringify(process.env.API_URL) || JSON.stringify("http://api.devniel.com/v1"),
+                'BRAPH_CLIENT_ID' : JSON.stringify(process.env.BRAPH_CLIENT_ID),
+                'BRAPH_LOGIN_URL' : JSON.stringify(process.env.BRAPH_LOGIN_URL)
             }
         }),
 

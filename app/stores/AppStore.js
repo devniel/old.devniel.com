@@ -10,7 +10,7 @@ class AppStore extends BaseStore {
     this.ready = false;
 
     this.braph = {
-      client_id : '6324fac996a67456c05013684857e284747cf15a4cb220c81fddd664f548436e'
+      client_id : AppConstants.BRAPH_CLIENT_ID
     }
     
     this.error = null;
